@@ -8,7 +8,7 @@ var stand1,polygon;
 var block1,block2,block3,block4,block5,block6,block7,block8,block9,block10,block11,block12,block13,block14
 var block15,block16
 var sling,ball,ballImg
-
+var score = 0
 function preload(){
       ballImg = loadImage("origami.png");
    }
@@ -52,7 +52,7 @@ function setup() {
 
 function draw() {
   background("#FFFF33"); 
-  
+  text("SCORE : "+score,750,40)
   //console.log(ball.speed);
 
   Engine.update(engine);
@@ -85,6 +85,29 @@ function draw() {
   image(ballImg,ball.position.x,ball.position.y,40,40);
   
   sling.display();
+block1.score();
+block2.score();
+block3.score();
+block4.score();
+block5.score();
+block6.score();
+block7.score();
+block8.score();
+block9.score();
+block10.score();
+block11.score();
+block12.score();
+block13.score();
+block14.score();
+block15.score();
+block16.score();
+
+
+
+
+
+
+
 
   drawSprites();
 }
